@@ -7,17 +7,58 @@
     <link rel="stylesheet" href="CalculatorStyle.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
+
+
+<script>
+function calculateResults() {
+ 
+
+    let display = document.getElementById('errors');
+    let experimental = document.getElementById('fValue').value;
+    let theoretical = document.getElementById('sValue').value;
+
+    let result = (Math.abs(((experimental - theoretical)/theoretical) * 100 )).toFixed(6);
+
+
+
+    document.getElementById("resultant").innerHTML = result + "% Error";
+    
+}
+
+</script>
+
 <body>
     <div class="topnav">
         <a class="logo">Calculator Central</a>
         <a href="index.html">Scientific</a>
         <a  class="active" href="percentError.html">Percent Error</a>
       
-      </div>
+    </div>
       
-    <div style=" font-size:46px;">This Calculator Is not yet available. Please check back at a later time, Sorry for any inconvenience.</div>
+<section>
+    <div class="container" style="font-size:large !important;">
+        <div class="errors">
 
 
-  
+            <h1>Percent Error Calculator</h1>
+
+            <div>
+                <label for="fValue">Experimental Value:</label>
+                <input type="text" id="fValue" name="first value" required><br><br>
+
+                <label for="sValue">Theoretical Value:</label>
+                <input type="text" id="sValue" name="second value" required><br><br>
+
+                <button class="submit" onclick="calculateResults()">Calculate</button>
+
+                <p id="resultant"></p>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
 </body>
 </html>

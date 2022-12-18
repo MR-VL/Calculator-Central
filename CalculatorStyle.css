@@ -2,13 +2,26 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
   }
+
+  @media only screen and (min-device-width : 100px) and (max-device-width : 700px) {
+    .container{
+      width:98% !important;
+    }
+    .tempError{
+      visibility: hidden;
+    }
+  }
+
+
   
+/*NAVBAR STYLES*/
+/**************************************************/
+
   .topnav {
     overflow: hidden;
     background-color: rgb(110, 110, 110);
   }
-  
-  .topnav a {
+   .topnav a {
     float: left;
     color: #f2f2f2;
     text-align: center;
@@ -31,23 +44,20 @@
 .logo{
     pointer-events: none;
     font-family:Lucida Handwriting;
-   
+    color:aqua !important;
 }
+/*END NAVBAR STUFF*/
+/**********************************************/
 
-
-
-
-
-
-
-
-
+/*SCIENTIFIC CALCULATOR STYLES*/
+/****************************************************/
 .container{
-    height : 77.5%;
-    width : 50%;
-    margin: 10vh auto 0 auto;
-    box-shadow: 0px 0px 43px 17px rgba(153,153,153,1);
-   font-size: xx-large;
+  height : 77.5%;
+  width : 50%;
+  margin: 10vh auto 0 auto;
+  box-shadow: 0px 0px 43px 17px rgba(153,153,153,1);
+ font-size: xx-large;
+ overflow: hidden;
 }
 
 #display{
@@ -89,3 +99,31 @@
     color:white;
     transition: 0.5s ease-in-out;
 }
+
+
+.tempError{
+  text-align: center;
+}
+/*END SCIENTIFIC CALCULATOR STYLES*/
+/*******************************************************/
+
+/*PERCENT ERROR CALCULATOR STYLES*/
+/*************************************************************/
+.errors{
+  text-align: center;
+  padding: 10%;
+ 
+}
+
+.submit{
+  padding:10px;
+  background-color: aquamarine;
+  border-color: grey;
+  font-weight: bold;
+
+ 
+}
+
+
+/*END PERCENT ERROR CALCULATOR STYLES*/
+/******************************************************************/
