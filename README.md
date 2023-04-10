@@ -1,3 +1,2 @@
 # Calculator-Central
-
-https://mr-kramer.github.io/Calculator-Central/
+https://mr-vl.github.io/Calculator-Central/
